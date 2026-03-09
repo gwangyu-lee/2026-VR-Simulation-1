@@ -103,3 +103,26 @@ public class Program           // 클래스 스코프 시작
 ```
 
 ---
+
+## 부동소수점 주의사항
+
+`double`과 `float` 모두 이진수로 소수를 표현하기 때문에 **미세한 오차**가 발생한다.
+
+```csharp
+double a = 0.1;
+double b = 0.2;
+double c = 0.3;
+
+Console.WriteLine(a + b);      // 0.30000000000000004
+Console.WriteLine(c == 0.3);   // True
+Console.WriteLine(c == a + b); // False  ← 주의!
+
+float fa = 0.1f;
+float fb = 0.2f;
+float fc = 0.3f;
+Console.WriteLine(fc == fa + fb); // False  ← float도 동일한 문제 발생
+```
+
+> 산술 연산 자체는 문제없지만,
+> **산술 연산 후 관계 연산(`==`)으로 비교**할 때는 오차를 주의해야 한다.
+> `double`보다 `float`의 정밀도가 낮아 오차가 더 크게 나타날 수 있다.
