@@ -1,37 +1,3 @@
-## 식별자 (Identifier)
-
-**변수의 이름**. 아래 규칙을 따른다.
-
-| 규칙 | 예시 |
-|------|------|
-| 키워드 사용 불가 | ❌ `int int = 4;` |
-| 숫자로 시작 불가 | ❌ `int 4 = 4;` |
-| 특수문자 불가 (`_` 제외) | ❌ `int 2*2 = 4;` |
-| 숫자 포함 가능 | ✅ `int myNumber4 = 4;` |
-| `_` 사용 가능 | ✅ `int _five = 5;` |
-
-### Camel Case
-
-C#에서 권장하는 네이밍 스타일.
-
-```
-my number → myNumber
-```
-
-| 스타일 | 시작 | 사용처 |
-|--------|------|--------|
-| **lowerCamelCase** | 소문자 | 변수 |
-| **UpperCamelCase** | 대문자 | 클래스, 메서드 |
-
-```csharp
-int myNumberIsFour = 4;  // 변수: lowerCamelCase
-// public class MyClass  // 클래스: UpperCamelCase
-```
-
-> `_`로 구분하는 snake_case(`my_number_is_five`)는 C#에서 권장하지 않는다.
-
----
-
 ## 연산자 (Operator)
 
 ### 산술 연산자 (Arithmetic Operator)
