@@ -161,7 +161,7 @@ static string ReadString(string prompt)
 
 ```csharp
 string name = ReadString("이름 입력: ");
-int hp     = ReadInt("HP 입력: ");
+int hp = ReadInt("HP 입력: ");
 
 Console.WriteLine($"{name} / HP: {hp}");
 ```
@@ -183,7 +183,7 @@ public class Player
     public Player(string name, int hp)
     {
         this.name = name;
-        this.hp   = hp;
+        this.hp = hp;
     }
 
     public void PrintStatus()
